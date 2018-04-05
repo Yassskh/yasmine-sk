@@ -6,10 +6,10 @@ if test $1 ="-Name" ; then
 echo "Nom de l'application : initdev 
       but:creer un programme selon le besoin de l'utilisateur"
 else if test $1 ="-help"; then 
-"-Name: Afficher lenom de l'application et une petite description.
+"-Name: Afficher le nom de l'application et une petite description.
 -syntax: Afficher la syntaxe d'utilisation de la commande initdev.
 -arguments: lister les arguments et donner une description de chaque argument.
--author: Afficher lenom et l'email de l'auteur de l'application." 
+-author: Afficher le nom et l'email de l'auteur de l'application." 
 else if test $1 ="syntax"; then echo "commandes = -Name , -Syntax,-Arguments,-Help ,-Author"
 else if test $1 ="arguments"; then echo " 
 -c:le langage  c,-cpp: le langage  cpp,-py :le langage python,-GPL:GENERAL PUBLIC LICENCE,-MIT:licence MIT,-Name: affiche le nomde l'application , -Syntax :affiche les commandes ,-Arguments: affiche les arguements de l'application,-Help: affiche le menu help ,-Author: affiche nom & email de l'auteur de l'application"
@@ -25,7 +25,7 @@ touch $1/makefiles ;;
 touch $1/LICENCES;;
 touch $1/main;; 
 fi
-#l'utilisateur choisit le lagage 
+#l'utilisateur choisit le langage 
 echo "you must set project type,please chek the help: intidev-help" 
 if test $# -eq 2 then if $2= "-c" then 
 mkdir initdev /main.c /"$1" 
